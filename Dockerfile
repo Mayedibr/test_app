@@ -25,8 +25,5 @@ ENV DB_NAME=employee_entitlements
 ENV DB_USER=root
 ENV DB_PASS=password
 
-# (Optional) Override db.php to use env vars if needed
-# You can add an entrypoint script here if you want to dynamically update db.php
-
 # Start Apache
 CMD ["apache2-foreground"] 
