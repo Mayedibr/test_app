@@ -29,4 +29,4 @@ ENV DB_PASS=password
 # You can add an entrypoint script here if you want to dynamically update db.php
 
 # Start Apache
-CMD ["apache2-foreground"] 
+CMD ["apache2-foreground"]
