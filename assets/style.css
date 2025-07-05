@@ -1,0 +1,26 @@
+@import url('https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/lux/bootstrap.min.css');
+body { background: #f4f6fa; }
+.navbar-brand img { height: 32px; margin-right: 8px; }
+.sidebar {
+  min-width: 220px;
+  max-width: 220px;
+  background: #232946;
+  color: #fff;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  padding: 60px 0 0 0;
+  z-index: 1000;
+}
+.sidebar .nav-link { color: #fff; }
+.sidebar .nav-link.active, .sidebar .nav-link:hover { background: #393e6a; color: #ffd803; }
+.main-content { margin-left: 220px; padding: 2rem 2rem 2rem 2rem; }
+.table-hover tbody tr:hover { background: #e0e7ff; }
+.toast-container { position: fixed; top: 1rem; right: 1rem; z-index: 2000; }
+@media (max-width: 991px) {
+  .sidebar { position: static; width: 100%; min-width: 0; max-width: none; height: auto; }
+  .main-content { margin-left: 0; padding: 1rem; }
+}
+
+.navbar-brand { font-weight: bold; }
+.card { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.table thead { background: #e9ecef; } 
