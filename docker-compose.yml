@@ -24,10 +24,7 @@ services:
       DB_PASS: password
     ports:
       - "8888:80"
-    volumes:
-      - .:/var/www/html
     restart: always
-    command: ["bash", "-c", "chmod -R 755 /var/www/html && apache2-foreground"]
 
 volumes:
   db_data:
