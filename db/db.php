@@ -6,7 +6,11 @@ $pass = getenv('DB_PASS') ?: 'password';
 $charset = 'utf8';
 $port = 3306;
 
+<<<<<<< HEAD
 $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
+=======
+$dsn = 'mysql:host=db;port=3306;dbname=employee_entitlements;charset=utf8';
+>>>>>>> 9ad13c7b969a370ece8dd306fef7804801176487
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,

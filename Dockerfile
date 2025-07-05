@@ -26,4 +26,4 @@ ENV DB_USER=root
 ENV DB_PASS=password
 
 # Start Apache
-CMD ["apache2-foreground"] 
+CMD ["apache2-foreground"]
