@@ -7,8 +7,11 @@ services:
     environment:
       MYSQL_DATABASE: employee_entitlements
       MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
     volumes:
       - db_data:/var/lib/mysql
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
     ports:
       - "3306:3306"
 
