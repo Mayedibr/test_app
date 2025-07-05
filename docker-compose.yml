@@ -1,3 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: entitlements-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: employee_entitlements
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
   app:
     build: .
     container_name: entitlements-app
@@ -11,3 +28,7 @@
     ports:
       - "8888:80"
     restart: always
+    # NO volumes here! Do not mount your code directory.
+
+volumes:
+  db_data:
