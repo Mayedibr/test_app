@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-    db:
+  db:
     image: mysql:8.0
     container_name: entitlements-db
     restart: always
